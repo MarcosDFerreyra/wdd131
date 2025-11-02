@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header span {
+    background-color: rgb(2, 93, 113);
+    color: white;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: rgb(85, 84, 84);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+main h1 {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card h2 {
+    background-color: rgb(2, 93, 113);
+    height: 30px;
+    color: white;
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 10px;
+}
+
+.card:first-of-type {
+    grid-column: 1/2;
+
+}
+
+.card:last-of-type {
+    grid-column: 2/3;
+}
+
+.marcos-section {
+    font-size: 1.1rem;
+    display: flex;
+    padding: 13px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.marcos-section img {
+    border-radius: 0.4rem;
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.argentina-section {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 20px;
+}
+
+.web {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding-left: 37px;
+}
+
+footer {
+    background-color: rgb(2, 93, 113);
+    color: white;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.modified {
+    display: flex;
+
+}
