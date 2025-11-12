@@ -1,0 +1,42 @@
+@media screen and (min-width: 500px) {
+    #menu {
+        display: none;
+    }
+
+    header ul {
+        flex-direction: row;
+    }
+
+    header a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav a{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    main {
+        max-width: 840px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+}
