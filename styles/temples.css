@@ -15,7 +15,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(196, 172, 132);
+    background-color: rgb(3, 3, 3);
     color: white;
     font-size: 1.8rem;
 }
@@ -33,6 +33,7 @@ header #menu {
 
 header #menu::before {
     content: "☰";
+    color: white;
 }
 
 header #menu.open::before {
@@ -60,7 +61,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: #000;
+    color: #ff0000;
 }
 
 nav.open {
@@ -93,7 +94,7 @@ img {
 }
 
 footer {
-    background-color: rgb(196, 172, 132);
+    background-color: rgb(0, 0, 0);
     color: white;
     display: flex;
     flex-wrap: wrap;
