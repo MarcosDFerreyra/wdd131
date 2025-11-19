@@ -3,6 +3,11 @@
     font-weight: 500;
 }
 
+:root {
+    --color: rgb(249, 249, 10);
+    --color-2: rgb(1, 152, 1);
+}
+
 header,
 main,
 footer {
@@ -12,7 +17,7 @@ footer {
 }
 
 header {
-    background-color: rgb(249, 249, 10);
+    background-color: var(--color)
 }
 
 h1 {
@@ -81,7 +86,7 @@ ul {
 }
 
 footer {
-    background-color: rgb(249, 249, 10);
+    background-color: var(--color);
     color: black;
     text-align: center;
     margin-top: 5px;
@@ -96,7 +101,7 @@ footer {
     }
 
     h2 {
-        background-color: green;
+        background-color: var(--color-2);
     }
 
     .DATA {
