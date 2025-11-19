@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Marcos Ferreyra">
+    <meta name="author" content="Marcos Ferreyra">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>AMAZONAS</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/large-Image.webp" media="(min-width: 500px)">
+                <img src="images/small-Image.webp" alt="bird image" width="450" height="600">
+            </picture>
+        </div>
+        <section class="DATA">
+            <h2>DATA</h2>
+
+            <ul>
+                <li><span class="label">Area: </span>7,000,000 km²</li>
+                <li><span class="label">Location: </span>South America</li>
+                <li><span class="label">Currency: </span>Brazilian Real [main currency in region]</li>
+                <li><span class="label">Estimated Species: </span>Over 3 million</li>
+                <li><span class="label">Calling Codes: </span>+55 (Brazil)</li>
+                <li><span class="label">Time Zones: </span>UTC-5 to UTC-3</li>
+
+            </ul>
+        </section>
+        <section class="WEATHER">
+            <h2>WEATHER</h2>
+            <img src="images/sun.svg" alt="weather image = sun" width="70" height="100">
+            <ul>
+                <li><span class="label">Climate: </span>Tropical humid</li>
+                <li><span class="label">Temperature: </span>25-28°C</li>
+                <li><span class="label">Wind:</span>: 4 km/h</li>
+                <li><span class="label">Wind Chill</span>: 9°C</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Marcos Ferreyra | Buenos Aires, Argentina: </p>
+        <p class="modified"> last modified : <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
