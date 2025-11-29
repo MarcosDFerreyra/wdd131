@@ -1,0 +1,44 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F4F4;
+    padding: 20px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #003366;
+}
+
+.color-box1{ 
+    background:#d2d2d2;
+    color:#2E2E2E;
+    border: 1px solid black;
+}
+.color-box2 {
+    background:#E8E6E1;
+    color:#2E2E2E;
+}
+.color-box3{ 
+    background:#C2B8A3;
+    color:#2E2E2E;
+}
+.color-box4{ 
+    background:#6A6A6A;
+    color:#fff;
+}
+.color-box5 {
+    background:#2E2E2E;
+    color:#fff;
+}
+
+img {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
