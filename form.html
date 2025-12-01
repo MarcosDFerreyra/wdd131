@@ -19,37 +19,37 @@
     <main>
         <form method="get" action="review.html" class="review">
         <fieldset>
-            <label> <strong>Product Name</strong>
+            <label for="product name"> <strong>Product Name</strong>
                 <select name="products" id="products" required>
-                    <option value="">select a product</option>
+                    <option value="" disabled selected>select a product </option>
                 </select>
             </label>
-            <label><strong>Overrall Rating</strong></label>
+            <label for="overrall rating"><strong>Overrall Rating</strong></label>
                 <div class="star-rating">
-                    <input type="radio" name="stars" id="star-a" value="5" />
+                    <input type="radio" name="stars" id="star-a" value="5" required/>
                     <label for="star-a"></label>
                 
-                    <input type="radio" name="stars" id="star-b" value="4" />
+                    <input type="radio" name="stars" id="star-b" value="4"  required/>
                     <label for="star-b"></label>
                 
-                    <input type="radio" name="stars" id="star-c" value="3" />
+                    <input type="radio" name="stars" id="star-c" value="3" required/>
                     <label for="star-c"></label>
                 
-                    <input type="radio" name="stars" id="star-d" value="2" />
+                    <input type="radio" name="stars" id="star-d" value="2" required/>
                     <label for="star-d"></label>
                 
-                    <input type="radio" name="stars" id="star-e" value="1" />
+                    <input type="radio" name="stars" id="star-e" value="1" required/>
                     <label for="star-e"></label>
                 </div>
-            <label><strong>Date of Instalation</strong><input type="date" name="compleateDate" id="compleateDate" required></label>
-            <label><strong>With features did you find useful in the product</strong></label>
-            <label><input type="checkbox" name="durability" id="durability" value="check">Durability</label>
-            <label><input type="checkbox" name="ease of use" id="ease of use" value="check">Ease of Use</label>
-            <label><input type="checkbox" name="perfomance" id="perfomance" value="check">Perfomance</label>
-            <label><input type="checkbox" name="desing" id="desing" value="check">Desing</label>
+            <label for="date"><strong>Date of Instalation</strong><input type="date" name="compleateDate" id="compleateDate" required></label>
+            <label for="list"><strong>With features did you find useful in the product</strong></label>
+            <label for="durability"><input type="checkbox" name="durability" id="durability" value="check">Durability</label>
+            <label for="use"><input type="checkbox" name="ease of use" id="ease of use" value="check">Ease of Use</label>
+            <label for="perfomance"><input type="checkbox" name="perfomance" id="perfomance" value="check">Perfomance</label>
+            <label for="desing"><input type="checkbox" name="desing" id="desing" value="check">Desing</label>
 
-            <label><strong>Written Review</strong>(optional)<textarea name="review" id="review"></textarea> </label>
-            <label><strong>Your name</strong>(optional)<input type="text" name="name" id="name" ></label>
+            <label for="written review"><strong>Written Review</strong>(optional)<textarea name="review" id="review"></textarea> </label>
+            <label for="name"><strong>Your name</strong>(optional)<input type="text" name="name" id="name" ></label>
         </fieldset>
         <input type="submit" value="Send Review">
         </form>
