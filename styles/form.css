@@ -27,13 +27,22 @@ header{
 
 }
 
+.review p {
+    display: block; /* hace que se apilen de arriba abajo */
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+ 
+
+}
+
 .star-rating {
     display: flex;
     align-items: center;
     width: 160px;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 40px auto;
+    margin: 20px auto;
     position: relative;
 }
 
