@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Marcos Ferreyra">
+    <meta name="author" content="Marcos Ferreyra">
+    <link rel="stylesheet" href="styles/hotel.css">
+    <script src="scritps/homepage.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Stack+Sans+Text:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Buenos Aires City Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="page2.html">page2</a></li>
+                <li><a href="page3.html">page3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="Places">
+        <h1 class="chau">Places Nearby</h1>
+        <section>
+            <div class="filter-buttons">
+                <button data-category="all" class="active">All</button>
+                <button data-category="restaurant">Restaurants</button>
+                <button data-category="museums">Museums & Cultural Spots</button>
+                <button data-category="shopping">Shopping & Commercial Areas</button>
+                <button data-category="parks">Parks & Outdoor Areas</button>
+                <button data-category="landmarks">Landmarks & Tourist Spots</button>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card" data-category="restaurant">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>El Preferido de Palermo – Traditional Argentine Cuisine</h2>
+                    <p>Famous for its classic Buenos Aires dishes, excellent steak, and vibrant pink building.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 10–15 min by car</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="restaurant">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Cabaña Las Lilas – Premium Steakhouse</h2>
+                    <p>High-end parrilla with top-quality meats and waterfront views.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 5–7 min </p>
+                </div>
+            </div>
+
+            <div class="card" data-category="restaurant">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Havanna Café (Florida Street) – Coffee & Snacks</h2>
+                    <p>Quick coffee, pastries, alfajores, and light meals.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 5 min walking</p>
+                </div>
+
+            </div>
+
+            <div class="card" data-category="restaurant">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>La Biela – Historic Café in Recoleta</h2>
+                    <p>Iconic café next to Recoleta Cemetery.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 10 min by car / 20 min walking</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="museums">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Museo Nacional de Bellas Artes</h2>
+                    <p>Argentina’s most important art museum. Free entrance.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 10–12 min by car</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="museums">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Museo de Arte Latinoamericano (MALBA)</h2>
+                    <p>Modern and contemporary Latin-American art.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 12–15 min by car</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="museums">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Centro Cultural Kirchner (CCK)</h2>
+                    <p>Massive cultural center with concerts, exhibitions and free activities.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 7 min walking</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="museums">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Teatro Colón</h2>
+                    <p>One of the world’s most famous opera houses. Guided tours available.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 10 min walking</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="shopping">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Galerías Pacífico Shopping Mall</h2>
+                    <p>High-end mall with fashion brands, restaurants and artistic murals.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 6–8 min walking</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="shopping">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Florida Street (Calle Florida)</h2>
+                    <p>Pedestrian street full of shops, cafés and souvenirs.</p>
+                </div>
+                <div class="distance">
+                
+                    <p><strong>Distance:</strong> 5 min walking</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="shopping">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Patio Bullrich (Recoleta)</h2>
+                    <p>Luxury shopping with premium international brands.</p>
+                </div>
+                <div class="distance">
+                
+                    <p><strong>Distance:</strong> 10 min by car</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="shopping">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Recoleta Mall</h2>
+                    <p>Shops, cinema, food court and a beautiful neighborhood.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 10 min by car / 20 min walking</p>
+                
+                </div>
+            </div>
+
+            <div class="card" data-category="parks">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Plaza San Martín (Retiro)</h2>
+                    <p>Historic park with monuments and views of Torre Monumental.</p>
+                </div>
+                <div class="distance">
+                
+                    <p><strong>Distance:</strong> 3 min walking</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="parks">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Puerto Madero Waterfront</h2>
+                    <p>Boardwalk, restaurants, modern architecture and sunset views.</p>
+                </div>
+                <div class="distance">
+                
+                    <p><strong>Distance:</strong> 10–12 min walking</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="parks">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Costanera Sur Ecological Reserve</h2>
+                    <p>Huge natural reserve ideal for walking and cycling.</p>
+                </div>
+                <div class="distance">
+                    <p><strong>Distance:</strong> 20 min walking from Puerto Madero</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="landmarks">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Obelisco de Buenos Aires</h2>
+                    <p>The most iconic monument in the city.</p>
+                </div>
+                <div class="distance">
+                
+                    <p><strong>Distance:</strong> 15 min walking</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="landmarks">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Casa Rosada (Government House)</h2>
+                    <p>Historic building with guided tours on weekends.</p>
+                </div>
+                <div class="distance">
+                
+                    <p><strong>Distance:</strong> 10–12 min walking</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="landmarks">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Cementerio de Recoleta</h2>
+                    <p>Famous for its mausoleums, art and history.</p>
+                </div>
+                <div class="distance">
+                
+                    <p><strong>Distance:</strong> 20 min walking / 10 min by car</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Marcos Ferreyra | Buenos Aires, Argentina:</p>
+        <p class="modified">last modified : <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Marcos Ferreyra">
+    <meta name="author" content="Marcos Ferreyra">
+    <link rel="stylesheet" href="styles/hotel.css">
+    <script src="scritps/homepage.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Stack+Sans+Text:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Buenos Aires City Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="page2.html">page2</a></li>
+                <li><a href="page3.html">page3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="rooms">
+        <h1 class="hola">Rooms</h1>
+        <section class="habitaciones">
+            <div class="card">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Deluxe King Room</h2>
+                    <p>A bright and elegant room with a modern design, perfect for couples or solo travelers seeking
+                        superior comfort.</p>
+                </div>
+                <button class="rooms-button" type="button" onclick="window.location.href='page4'">Reserve</button>
+            </div>
+            <div class="card">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Junior Suite</h2>
+                    <p>A comfortable and spacious suite with a separate living area, ideal for longer stays or business
+                        trips.</p>
+                </div>
+                <button class="rooms-button" type="button" onclick="window.location.href='page4'">Reserve</button>
+            </div>
+            <div class="card">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Executive Twin Room</h2>
+                    <p>Designed for friends, coworkers, or travelers who prefer separate beds without sacrificing
+                        comfort.</p>
+                </div>
+                <button class="rooms-button" type="button" onclick="window.location.href='page4'">Reserve</button>
+            </div>
+            <div class="card">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Family Suite</h2>
+                    <p>A spacious suite perfect for families, with multiple rooms and everything needed for a relaxed
+                        stay.</p>
+                </div>
+                <button class="rooms-button" type="button" onclick="window.location.href='page4'">Reserve</button>
+            </div>
+            <div class="card">
+                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <div class="card-info">
+                    <h2>Premium Terrace Suite</h2>
+                    <p>The hotel's most exclusive suite, featuring a private terrace with panoramic Recoleta views.</p>
+                </div>
+                <button class="rooms-button" type="button" onclick="window.location.href='page4'">Reserve</button>
+            </div>
+        </section>
+
+        <section>
+            <table>
+                <caption>
+                    Rooms Information
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Price per Night</th>
+                        <th scope="col">Rooms</th>
+                        <th scope="col">beds</th>
+                        <th scope="col">Highlights</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Deluxe King Room</th>
+                        <td>USD 160 — 190</th>
+                        <td>1-room open layout</td>
+                        <td>1 King Bed</td>
+                        <td>Marble bathroom,
+                            Work desk,
+                            50" Smart TV,
+                            City view</td>
+                    </tr>
+                    <tr>
+                        <th>Junior Suite</th>
+                        <td>USD 210 — 250</th>
+                        <td>2 rooms (bedroom + small living area)</td>
+                        <td>1 Queen Bed</td>
+                        <td>Living room space,
+                        Single sofa,
+                        Large bathroom with rainfall shower,
+                        Nespresso coffee machine</td>
+                    </tr>
+                    <tr>
+                        <th>Executive Twin Room</th>
+                        <td>USD 170 — 200</td>
+                        <td>1-room layout</td>
+                        <td>2 Twin Beds</td>
+                        <td>XL work desk, 55" TV, Laptop safe</td>
+                    </tr>
+                    <tr>
+                        <th>Family Suite</th>
+                        <td>USD 300 — 340</td>
+                        <td>3 rooms (master bedroom + secondary bedroom + living room)</td>
+                        <td>1 King Bed + 2 Twin Beds</td>
+                        <td>Two full bathrooms, Small dining area, Minibar, Smart TVs in every room, Park view</td>
+                    </tr>
+                    <tr>
+                        <th>Premium Terrace Suite</th>
+                        <td>USD 470 — 530</td>
+                        <td>2 rooms + terrace</td>
+                        <td>1 King Bed</td>
+                        <td>Private terrace with seating and loungers, Outdoor jacuzzi, Luxury living room, Bathroom with standalone bathtub, Exclusive packages</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Marcos Ferreyra | Buenos Aires, Argentina</p>
+        <p class="modified">: last modified : <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

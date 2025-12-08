@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Marcos Ferreyra">
+    <meta name="author" content="Marcos Ferreyra">
+    <link rel="stylesheet" href="styles/hotel.css">
+    <script src="scritps/homepage.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Stack+Sans+Text:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Buenos Aires City Hotel</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="page2.html">page2</a></li>
+                <li><a href="page3.html">page3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="homepage">
+        <picture class="hero-image">
+            <source media="(max-width: 500px)" srcset="images/hotel-image.webp" loading ="lazy">
+            <img src="images/hotel-image-large.jpg" alt="imagen of the hotel" loading="lazy">
+        </picture>
+
+        <section class="text">
+            <h2>About the Hotel</h2>
+            <p>Located in the heart of the elegant Recoleta neighborhood, BS Hotel City blends modern comfort,
+                personalized service,
+                and an unbeatable location to experience the best of Buenos Aires. Our hotel was created with the
+                mission of offering a
+                warm, sophisticated, and accessible stay for travelers from around the world.
+
+                We stand out for our modern and relaxed atmosphere, designed to provide the perfect rest after exploring
+                the city. Just
+                steps away from museums, parks, historic cafés, cultural centers, and many of Buenos Aires’ main
+                attractions, we are the
+                ideal starting point for both leisure and business travelers.
+
+                At BS Hotel City, we believe every detail matters. That’s why we offer comfortable rooms, carefully
+                designed spaces,
+                dedicated service, and the peace of mind of staying in one of the city’s safest and most prestigious
+                areas.
+
+                More than just a place to stay, we are a space where every guest can feel at home while experiencing an
+                authentic and
+                memorable Buenos Aires visit.</p>
+        </section>
+        <section class="location">
+            <div class="map">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4290.077135729848!2d-58.38985351172915!3d-34.58678170061988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa37c9450ad%3A0x9cdf7e292ed4c101!2sAlvear%20Palace%20Hotel!5e0!3m2!1ses-419!2sar!4v1765044292856!5m2!1ses-419!2sar"
+                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="information">
+                <h2>Information</h2>
+                <p><strong>Address:</strong> Av. Alvear 1891, C1129AAA, Buenos Aires</p>
+                <p><strong>Location:</strong> Recoleta, Buenos Aires, Argentina</p>
+                <p><strong>Phone:</strong> +54 11 3434-4343</p>
+                <p><strong>Email:</strong> bshotelcity@gmail.com</p>
+                <p><strong>language:</strong> Spanish / English </p>
+                <p><strong>Check-in:</strong> 3:00 PM</p>
+                <p><strong>Check-out:</strong> 11:00 AM</p>
+
+
+              
+            </div>
+        </section>
+        <section class="formulario">
+            <h2>Send Us a Message</h2>
+            <p> If you have any questions or do you want to contact with us</p>
+            <form>
+                <div class="user">
+                    <input type="text" id="name" name="name" placeholder="Type your name">
+                    <input type="mail" id="usermail" name="usermail" placeholder="Type your Email">
+                </div>
+                <div class="usertext">
+                    <textarea name="usertext" id="text" placeholder="Type your Text"></textarea>
+                </div>
+                <div class="homepage-button">
+                    <button type="button">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Marcos Ferreyra | Buenos Aires, Argentina</p>
+        <p class="modified">: last modified : <span id="lastModified"></span></p>
+    </footer>
+</body>
+    
+</html>

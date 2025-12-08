@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Marcos Ferreyra">
+    <meta name="author" content="Marcos Ferreyra">
+    <link rel="stylesheet" href="styles/hotel.css">
+    <script src="scritps/homepage.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Stack+Sans+Text:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main class="reservation-page">
+        <form method="get" action="reservation.html" class="reservation">
+            
+            <fieldset>
+                <label for="name"><strong>Your name</strong><input type="text" name="name" id="name" required></label>
+                <label for="Email"><strong>Your Email</strong><input type="email" name="email" id="Email" required></label>
+                <label for="number"><strong>Your Phone Number</strong><input type="tel" name="phone number" id="number" required></label>
+                <label for="number"><strong>Quantity of People</strong><input type="number" name="uantity" id="quantity" required></label>
+                
+                <label for="products"> <strong>Product Name</strong>
+                    <select name="products" id="products" required>
+                        <option value="" disabled selected>select a product </option>
+                        <option value="room1">Deluxe King Room</option>
+                        <option value="room2">Junior Suite</option>
+                        <option value="room3">Executive Twin Room</option>
+                        <option value="room4">Family Suite</option>
+                        <option value="room5">Premium Terrace Suite</option>
+
+                    </select>
+                </label>
+
+                <label for="compleateDate"><strong>check in</strong><input type="date" name="compleateDate"
+                        id="compleateDate" required></label>
+                <label for="compleateDate"><strong>check out</strong><input type="date" name="compleateDate"
+                        id="compleateDate" required></label>
+
+                <label for="extra"><strong>Make your questions</strong>(opcional)<textarea name="extratext"
+                        id="extratext"></textarea>
+                </label>
+
+            </fieldset>
+
+            <input type="submit" value="Make Reservation">
+        </form>
+    </main>
+
+</body>
+
+</html>
