@@ -162,7 +162,7 @@ textarea {
     background: var(--buttons);
     margin-bottom: 40px;
     font-family: var(--pricipal-font);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 footer {
