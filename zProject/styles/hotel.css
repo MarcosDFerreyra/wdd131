@@ -39,7 +39,9 @@ header {
     color: var(--principal-text);
     padding: 0 120px;
 }
-
+#menu {
+    display: none;
+}
 header a {
     display: block;
     flex: 1 1 100%;
@@ -49,6 +51,7 @@ header a {
     color: var(--principal-text);
     font-weight: bold;
 }
+
 
 nav ul {
     flex-direction: row;
@@ -110,7 +113,7 @@ nav ul {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.41);
     width: 350px;
-    height: 370px;
+    height: 445px;
 }
 
 .information p {
@@ -152,7 +155,7 @@ textarea {
     max-width: 350px;
 }
 
-.homepage-button [type="button"] {
+.homepage-button [type="submit"] {
     font-size: 1.5rem;
     padding: 12px 70px;
     border-radius: 2rem;
@@ -278,7 +281,9 @@ td {
     align-items: center;
     justify-content: space-around;
     height: 70px;
-    padding: 22px 60px 0 60px;
+    padding: 22px 60px 30px 60px;
+    
+
 }
 
 .filter-buttons button {
@@ -290,6 +295,7 @@ td {
     color: white;
     font-size: 1.1rem;
     border-radius: 2rem;
+
 }
 
 .chau {
@@ -298,6 +304,7 @@ td {
     font-size: 2rem;
     color: var(--principal-text);
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .places {
@@ -437,5 +444,53 @@ td {
     .reservation select,
     .reservation textarea {
         max-width: 100%;
+    }
+
+    .filter-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 270px;
+    }
+
+
+    header #menu {
+        display:block;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top: 45px;
+        right: 20px;
+    }
+
+    header #menu::before {
+        content: "☰";
+        color: black;
+        align-items: center;
+    }
+
+    header #menu.open::before {
+        content: "x";
+    }
+
+    header.open h1 {
+        display: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+    nav.open {
+        display: block;
     }
 }

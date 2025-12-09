@@ -26,9 +26,9 @@
         <button id="menu"></button>
         <nav>
             <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="page2.html">page2</a></li>
-                <li><a href="page3.html">page3</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="page2.html">Rooms</a></li>
+                <li><a href="page3.html">Turism</a></li>
             </ul>
         </nav>
     </header>
@@ -86,7 +86,7 @@
         <section class="formulario">
             <h2>Send Us a Message</h2>
             <p> If you have any questions or do you want to contact with us</p>
-            <form>
+            <form method="get" action="questions.html">
                 <div class="user">
                     <input type="text" id="name" name="name" placeholder="Type your name">
                     <input type="mail" id="usermail" name="usermail" placeholder="Type your Email">
@@ -95,7 +95,7 @@
                     <textarea name="usertext" id="text" placeholder="Type your Text"></textarea>
                 </div>
                 <div class="homepage-button">
-                    <button type="button">Send</button>
+                    <button type="submit">Send</button>
                 </div>
             </form>
         </section>
@@ -103,6 +103,7 @@
     <footer>
         <p>©<span id="currentyear"></span> | Marcos Ferreyra | Buenos Aires, Argentina</p>
         <p class="modified">: last modified : <span id="lastModified"></span></p>
+        <p id="visits"></p>
     </footer>
 </body>
     

@@ -23,16 +23,17 @@
 <body>
     <header>
         <h1>Buenos Aires City Hotel</h1>
+        <button id="menu"></button>
         <nav>
             <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="page2.html">page2</a></li>
-                <li><a href="page3.html">page3</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="page2.html">Rooms</a></li>
+                <li><a href="page3.html">Turism</a></li>
             </ul>
         </nav>
     </header>
     <main class="rooms">
-        <h1 class="hola">Rooms</h1>
+        <h1 class="hola">Rooms Available</h1>
         <section class="habitaciones">
             <div class="card">
                 <img src="images/first-room.jpg" alt="first room" loading="lazy">
@@ -44,7 +45,7 @@
                 <button class="rooms-button" type="button" onclick="window.location.href='page4'">Reserve</button>
             </div>
             <div class="card">
-                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <img src="images/junior-suit.webp" alt="first room" loading="lazy">
                 <div class="card-info">
                     <h2>Junior Suite</h2>
                     <p>A comfortable and spacious suite with a separate living area, ideal for longer stays or business
@@ -53,7 +54,7 @@
                 <button class="rooms-button" type="button" onclick="window.location.href='page4'">Reserve</button>
             </div>
             <div class="card">
-                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <img src="images/twin-suit.webp" alt="first room" loading="lazy">
                 <div class="card-info">
                     <h2>Executive Twin Room</h2>
                     <p>Designed for friends, coworkers, or travelers who prefer separate beds without sacrificing
@@ -62,7 +63,7 @@
                 <button class="rooms-button" type="button" onclick="window.location.href='page4'">Reserve</button>
             </div>
             <div class="card">
-                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <img src="images/family-suit.webp" alt="first room" loading="lazy">
                 <div class="card-info">
                     <h2>Family Suite</h2>
                     <p>A spacious suite perfect for families, with multiple rooms and everything needed for a relaxed
@@ -71,7 +72,7 @@
                 <button class="rooms-button" type="button" onclick="window.location.href='page4'">Reserve</button>
             </div>
             <div class="card">
-                <img src="images/first-room.jpg" alt="first room" loading="lazy">
+                <img src="images/terrace-suit.webp" alt="first room" loading="lazy">
                 <div class="card-info">
                     <h2>Premium Terrace Suite</h2>
                     <p>The hotel's most exclusive suite, featuring a private terrace with panoramic Recoleta views.</p>
@@ -144,6 +145,7 @@
     <footer>
         <p>©<span id="currentyear"></span> | Marcos Ferreyra | Buenos Aires, Argentina</p>
         <p class="modified">: last modified : <span id="lastModified"></span></p>
+        <p id="visits"></p>
     </footer>
 </body>
 

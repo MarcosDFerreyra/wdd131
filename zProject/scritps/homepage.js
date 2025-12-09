@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
-    
     const currentYear = new Date().getFullYear();
     document.getElementById("currentyear").innerHTML = currentYear;
     document.getElementById("lastModified").innerHTML = document.lastModified;
@@ -38,3 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+    let visits = Number(localStorage.getItem("visits")) || 0;
+    visits++;
+
+    localStorage.setItem("visits", visits);
+
+    const visitsEl = document.getElementById("visits");
+    if (visitsEl) {
+        visitsEl.textContent = `Page visits: ${visits}`;
+    }
+
